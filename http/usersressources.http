@@ -1,0 +1,32 @@
+### Register new user
+
+POST http://localhost:8080/webserices/rest/users/save
+Content-Type: application/json
+
+{
+  "id": "1",
+  "firstName": "Ngor",
+  "lastName": "SECK",
+  "email": "seck@samanecorporation.com",
+  "password": "passer"
+}
+
+### update user
+PUT http://localhost:8080/webserices/rest/users/update/1
+Content-Type: application/json
+
+{
+"id": "1",
+"firstName": "Moussa",
+"lastName": "SECK",
+"email": "seck@seck.sn",
+"password": "passer"
+}
+
+### GET user
+GET http://localhost:8080/webserices/rest/users/18
+
+
+### GET All users
+GET http://localhost:8080/webserices/rest/users/all
+
